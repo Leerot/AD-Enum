@@ -29,7 +29,7 @@ smbmap -H "$ip" -u "$user" -p "$password" > enum_smbmap.txt
 
 # bloodhound json
 echo "[*] Extracting bloodhound db ..."
-bloodhound-python -u '$user' -p '$password' -d $domain -c All --zip -ns $ip
+bloodhound-python -u "$user" -p "$password" -d $domain -c All --zip -ns $ip
 
 
 echo "[+] File obtained:"
