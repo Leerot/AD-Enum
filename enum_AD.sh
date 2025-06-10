@@ -21,7 +21,7 @@ echo ""
 # users
 echo "[*] Extracting users ..."
 nxc smb "$name" -u "$user" -p "$password" --rid-brute | \
-grep "SidTypeUser" | awk -F '\\' '{print $2}' | awk '{print $1}' > extraer_usuarios.txt
+grep "SidTypeUser" | awk -F '\\' '{print $2}' | awk '{print $1}' > enum_users.txt
 
 # smbmap
 echo "[*] Extracting smbmap ..."
